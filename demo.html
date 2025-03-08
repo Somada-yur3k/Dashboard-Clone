@@ -1,64 +1,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Game Challenge 123 </title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game Challenge 123 </title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 </head>
 
 <body class="bg-[#353048]">
-    <div class=" w-[100%] h-[100%] bg-[white] flex  justify-center">
+  <!-- First Collumn -->
 
-        <div class="bg-[#17153B] w-[500px] h-[100%] md:w-[650px] flex pt-2 flex-col">
-            <div class=" flex sm: flex-wrap h-[100px] justify-center p-[30px] ">
-                <img class="w-[100px] h-[90px] rounded-[30px] p-2 " src="logo.png">
-                <p class=" font-mono font-bold text-white text-[40px] p-3"> ZenBank</p>
-                <div class="  border-white h-[600px] w-[100%]  flex items-center flex-col flex-wrap mt-[50px] ">
-                    
-                 <div class=" flex flex-col gap-[30px]"> 
-                    <div class=" flex flex-wrap hover:border-b-3 transition-all border-b-white "> 
-                        <svg class="w-[35px] fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24">
-                            <path d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"></path>
-                        </svg>
-                        <p class="font-mono font-semibold text-white text-[25px] p-2" > Dashboard</p>
-                      </div>
-                    <div class=" flex flex-wrap"> 
-                    
-                        <p class="font-mono font-semibold text-white text-[25px] p-2" > Customers</p>
-                      </div>    
-    
-                        
-                      <div class=" flex flex-wrap"> 
-                        
-                        <p class="font-mono font-semibold text-white text-[25px] p-2" > Category</p>
-                      </div>
-                         
-                      <div class=" flex flex-wrap"> 
-                        
-                        <p class="font-mono font-semibold text-white text-[25px] p-2" > Transaction</p>
-                      </div>
-                        
-                      <div class=" flex flex-wrap"> 
-                        
-                        <p class="font-mono font-semibold text-white text-[25px] p-2" > Stock </p>
-                     
-                        </div>
-                 </div>   
-                  
-                </div>
+  <div class="  h-[100%] bg-[white] flex  justify-center">
+    <!-- Dashborad Container -->
+    <div class="bg-[#17153B] w-[500px] h-[100%] sm:w-[300px] md:w-[650px] flex pt-2 flex-col">
+
+      <div class=" flex  flex-wrap justify-center p-[30px] ">
+        <!-- Logo/Name -->
+        <img class="w-[100px] h-[90px] rounded-[30px] p-2 " src="logo.png">
+        <p class=" font-mono font-bold text-white text-[40px] p-3"> ZenBank</p>
+        <!-- Dashborad- Button -->
+
+        <div class="  flex items-center flex-col flex-wrap mt-[50px] overflow-hidden ">
+          <div class=" flex flex-col h-[900px] gap-[25px]">
+            <div class=" flex flex-wrap hover:border-b-3 transition-all border-b-white ">
+              <svg class="w-[35px] fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                viewBox="0 0 24 24">
+                <path
+                  d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z">
+                </path>
+              </svg>
+              <p class="font-mono font-semibold text-white text-[25px] p-2"> Dashboard</p>
             </div>
-          
+            <div class=" flex flex-wrap hover:border-b-3 transition-all border-b-white ">
+              <?xml version="1.0" ?><svg class="fill-white w-[35px]" style="enable-background:new 0 0 24 24;"
+                version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="info" />
+                < id="icons">
+                  < id="user">
+                    <ellipse cx="12" cy="8" rx="5" ry="6" />
+                    <path
+                      d="M21.8,19.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9s-2.2-0.3-3.2-0.9    C8.3,14.8,7.6,14.7,7,15c-2.2,0.9-3.9,2.4-4.8,4.2C1.5,20.5,2.6,22,4.1,22h15.8C21.4,22,22.5,20.5,21.8,19.1z" />
+              </svg>
+              <p class="font-mono font-semibold text-white text-[25px] p-2"> Customers</p>
+            </div>
 
 
+            <div class=" flex flex-wrap hover:border-b-3 transition-all border-b-white ">
+              <svg class="w-[35px] fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                viewBox="0 0 24 24">
+                <path
+                  d="M 5.75 3 A 1.0001 1.0001 0 0 0 4.8867188 3.4960938 L 3.1367188 6.4960938 A 1.0001 1.0001 0 0 0 3 7 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 7 A 1.0001 1.0001 0 0 0 20.863281 6.4960938 L 19.113281 3.4960938 A 1.0001 1.0001 0 0 0 18.25 3 L 5.75 3 z M 6.3242188 5 L 17.675781 5 L 18.841797 7 L 5.1582031 7 L 6.3242188 5 z M 10 9 L 14 9 C 14.552 9 15 9.448 15 10 C 15 10.552 14.552 11 14 11 L 10 11 C 9.448 11 9 10.552 9 10 C 9 9.448 9.448 9 10 9 z">
+                </path>
+              </svg>
+              <p class="font-mono font-semibold text-white text-[25px] p-2"> Category</p>
+            </div>
+
+            <div class=" flex flex-wrap hover:border-b-3 transition-all border-b-white ">
+              <svg class="w-[34px] h-[34px] text-white mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <mask id="ipSTransaction0">
+                  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                    <path fill="#fff" stroke="#fff"
+                      d="M39 6H9a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Z" />
+                    <path stroke="#000" d="m21 31l5 4l8-10M14 15h20m-20 8h8" />
+                  </g>
+                </mask>
+                <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSTransaction0)" />
+              </svg>
+
+              <p class="font-mono font-semibold text-white text-[25px] p-2"> Transaction</p>
+            </div>
+
+            <div class=" flex flex-wrap hover:border-b-3 transition-all border-b-white ">
+              <svg class="w-[40px] h-[40px] text-white mt-1" xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+                viewBox="0 0 1024 1024">
+                <path fill="currentColor"
+                  d="M904 747H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM165.7 621.8l39.7 39.5c3.1 3.1 8.2 3.1 11.3 0l234.7-233.9l97.6 97.3a32.11 32.11 0 0 0 45.2 0l264.2-263.2c3.1-3.1 3.1-8.2 0-11.3l-39.7-39.6a8.03 8.03 0 0 0-11.3 0l-235.7 235l-97.7-97.3a32.11 32.11 0 0 0-45.2 0L165.7 610.5a7.94 7.94 0 0 0 0 11.3z" />
+              </svg>
+              <p class="font-mono font-semibold text-white text-[25px] p-2"> Stock </p>
+
+            </div>
+            <div class=" mt-[350px] flex  flex-wrap hover:border-b-3 transition-all border-b-white ">
+              <svg class="w-[40px] h-[40px] text-white mt-1" xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+                viewBox="0 0 1024 1024">
+                <path fill="currentColor"
+                  d="M904 747H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM165.7 621.8l39.7 39.5c3.1 3.1 8.2 3.1 11.3 0l234.7-233.9l97.6 97.3a32.11 32.11 0 0 0 45.2 0l264.2-263.2c3.1-3.1 3.1-8.2 0-11.3l-39.7-39.6a8.03 8.03 0 0 0-11.3 0l-235.7 235l-97.7-97.3a32.11 32.11 0 0 0-45.2 0L165.7 610.5a7.94 7.94 0 0 0 0 11.3z" />
+              </svg>
+              <p class="font-mono font-semibold text-white text-[25px] p-2"> Settings </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="bg-[#231e3e] w-[1000px] h-[100%] md:w-[100%] "> </div>
 
-        <div class="bg-[#17153B] w-[500px] h-[100%] md:w-[650px]"> </div>
+
     </div>
 
+    <div class="bg-[#231e3e] h-full md:w-[100%] overflow-y-auto "> 
+      <!-- Overview - Search-->
+      <div class=" m-[20px] h-[50px] flex justify-between sm:gap-[30px] md:gap-[50px] lg:gap-[200px] 2xl:gap-[700px]"> 
+        <p class="font-mono font-semibold text-white text-[25px] p-2 mr-10 "> Overview</p>
+        <input type="text" 
+        class="bg-[#231e3e] font-mono font-semibold text-[18px] text-white border-[1px] lg:w-[100%] border-gray-300 rounded-[50px] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[200px] md:w-[400px] transition-[2.5s]" 
+        placeholder="Search">
+      </div>
+      <!-- Features -->
+       
+      <div class="grid gap-4 m-[20px]  md:gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:m-[50px] xl:gap-[60px] auto-rows-[150px]">
+        
+        <div class="bg-[#2e2c5c]  rounded-[30px] p-2 flex justify-center flex-wrap ">
+          <svg class=" text-[#797ed5] w-[150px] h-[150px] float-left " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 26 26"><path fill="currentColor" d="M22.136 10h-5.282c-.472 0-.854-.443-.854-.989V8.99c0-.546.382-.989.854-.989h5.282c.476 0 .864.45.864 1s-.388 1-.864 1zm0 4h-5.282c-.472 0-.854-.443-.854-.989v-.022c0-.546.382-.989.854-.989h5.282c.476 0 .864.45.864 1s-.388 1-.864 1m.022 4h-3.327c-.46 0-.831-.443-.831-.989v-.022c0-.546.372-.989.831-.989h3.327c.463 0 .842.45.842 1s-.379 1-.842 1M10 13a4 4 0 1 1 0-8a4 4 0 0 1 0 8m-6.03 8.073c-.583 0-1.048-.518-.96-1.093A7.07 7.07 0 0 1 10 14a7.07 7.07 0 0 1 6.989 5.98c.09.575-.376 1.093-.958 1.093z"/></svg>
+          <div class="flex flex-col justify-center">
+            <span class="font-mono text-[#7c7f84] text-[25px]">Customers</span>
+            <p class="font-mono font-semibold text-[#fff] text-[40px]">479</p>
+          </div>
+        </div>
+        <div class="bg-[#2e2c5c] rounded-[30px] p-2 flex justify-center flex-wrap">
+          <svg class=" w-[150px] h-[150px] float-left " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16"><g fill="none"><path fill="url(#fluentColorPeople160)" d="M10.038 12.264c.384.145.863.236 1.462.236c.598 0 1.077-.09 1.46-.235c1.538-.582 1.538-2.04 1.538-2.04c0-.677-.549-1.225-1.225-1.225H9.725C9.048 9 8.5 9.548 8.5 10.225c0 0 0 1.457 1.538 2.04"/><path fill="url(#fluentColorPeople165)" fill-opacity=".5" d="M10.038 12.264c.384.145.863.236 1.462.236c.598 0 1.077-.09 1.46-.235c1.538-.582 1.538-2.04 1.538-2.04c0-.677-.549-1.225-1.225-1.225H9.725C9.048 9 8.5 9.548 8.5 10.225c0 0 0 1.457 1.538 2.04"/><path fill="url(#fluentColorPeople161)" d="M9.5 10.5A1.5 1.5 0 0 0 8 9H3a1.5 1.5 0 0 0-1.5 1.5v.075s0 2.925 4 2.925c3.812 0 3.991-2.656 4-2.906z"/><path fill="url(#fluentColorPeople162)" d="M9.5 10.5A1.5 1.5 0 0 0 8 9H3a1.5 1.5 0 0 0-1.5 1.5v.075s0 2.925 4 2.925c3.812 0 3.991-2.656 4-2.906z"/><path fill="url(#fluentColorPeople163)" d="M11.5 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/><path fill="url(#fluentColorPeople164)" d="M8 5.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0"/><defs><linearGradient id="fluentColorPeople160" x1="9.926" x2="11.205" y1="9.465" y2="12.963" gradientUnits="userSpaceOnUse"><stop offset=".125" stop-color="#9C6CFE"/><stop offset="1" stop-color="#7A41DC"/></linearGradient><linearGradient id="fluentColorPeople161" x1="3.402" x2="5" y1="9.598" y2="14.134" gradientUnits="userSpaceOnUse"><stop offset=".125" stop-color="#BD96FF"/><stop offset="1" stop-color="#9C6CFE"/></linearGradient><linearGradient id="fluentColorPeople162" x1="5.5" x2="7.75" y1="8.464" y2="15.939" gradientUnits="userSpaceOnUse"><stop stop-color="#885EDB" stop-opacity="0"/><stop offset="1" stop-color="#E362F8"/></linearGradient><linearGradient id="fluentColorPeople163" x1="10.451" x2="12.49" y1="4.532" y2="7.787" gradientUnits="userSpaceOnUse"><stop offset=".125" stop-color="#9C6CFE"/><stop offset="1" stop-color="#7A41DC"/></linearGradient><linearGradient id="fluentColorPeople164" x1="4.189" x2="6.737" y1="3.665" y2="7.734" gradientUnits="userSpaceOnUse"><stop offset=".125" stop-color="#BD96FF"/><stop offset="1" stop-color="#9C6CFE"/></linearGradient><radialGradient id="fluentColorPeople165" cx="0" cy="0" r="1" gradientTransform="matrix(3.9472 -.51042 .5289 4.09009 7.74 10.75)" gradientUnits="userSpaceOnUse"><stop offset=".392" stop-color="#3B148A"/><stop offset="1" stop-color="#3B148A" stop-opacity="0"/></radialGradient></defs></g></svg>
+          <div class="flex flex-col justify-center">
+            <span class="font-mono text-[#7c7f84] text-[25px]">Employees</span>
+            <p class="font-mono font-semibold text-[#fff] text-[40px]">48</p>
+          </div>
+        </div>
+
+        <div class="bg-[#2e2c5c] rounded-[30px] p-2 flex justify-center flex-wrap">
+          <svg class=" text-[#797ed5] w-[140px] h-[120px] float-left " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5l5-5m-5-7v12"/></svg>
+          <div class="flex flex-col justify-center">
+            <span class="font-mono text-[#7c7f84] text-[25px]">Requests</span>
+            <p class="font-mono font-semibold text-[#fff] text-[40px]">158</p>
+          </div>
+        </div>
+        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:col-span-1 sm:row-span-2 md:col-span-2 md:row-span-2">Item 4</div>
+        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:row-span-1 md:row-span-2">Item 5</div>
+        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:row-span-1 md:row-span-3 md:col-span-3">Item 6
+          
+        </div>
+      </div>
+
+      </div>
+
+      <div>
+
+      </div>
+
+     
+  
+    </div>
+
+   
+
+   
+  
+  </div>
 </body>
 
 </html>
