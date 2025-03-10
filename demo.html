@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dice Game Challenge 123 </title>
+  <title>ZenTech` </title>
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 </head>
 
@@ -18,7 +19,7 @@
       <div class=" flex  flex-wrap justify-center p-[30px] ">
         <!-- Logo/Name -->
         <img class="w-[100px] h-[90px] rounded-[30px] p-2 " src="logo.png">
-        <p class=" font-mono font-bold text-white text-[40px] p-3"> ZenBank</p>
+        <p class=" font-mono font-bold text-white text-[40px] p-3"> ZenTech</p>
         <!-- Dashborad- Button -->
 
         <div class="  flex items-center flex-col flex-wrap mt-[50px] overflow-hidden ">
@@ -93,11 +94,9 @@
         </div>
       </div>
 
-
-
     </div>
 
-    <div class="bg-[#231e3e] h-full md:w-[100%] overflow-y-auto "> 
+    <div class="bg-[#231e3e] h-full md:w-[100%] overflow-y-auto pt-10 "> 
       <!-- Overview - Search-->
       <div class=" m-[20px] h-[50px] flex justify-between sm:gap-[30px] md:gap-[50px] lg:gap-[200px] 2xl:gap-[700px]"> 
         <p class="font-mono font-semibold text-white text-[25px] p-2 mr-10 "> Overview</p>
@@ -107,7 +106,7 @@
       </div>
       <!-- Features -->
        
-      <div class="grid gap-4 m-[20px]  md:gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:m-[50px] xl:gap-[60px] auto-rows-[150px]">
+      <div class="grid gap-4 m-[20px] sm:grid-cols-1  md:gap-6  xl:grid-cols-3 xl:m-[40px]  xl:gap-[40px] auto-rows-[150px]">
         
         <div class="bg-[#2e2c5c]  rounded-[30px] p-2 flex justify-center flex-wrap ">
           <svg class=" text-[#797ed5] w-[150px] h-[150px] float-left " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 26 26"><path fill="currentColor" d="M22.136 10h-5.282c-.472 0-.854-.443-.854-.989V8.99c0-.546.382-.989.854-.989h5.282c.476 0 .864.45.864 1s-.388 1-.864 1zm0 4h-5.282c-.472 0-.854-.443-.854-.989v-.022c0-.546.382-.989.854-.989h5.282c.476 0 .864.45.864 1s-.388 1-.864 1m.022 4h-3.327c-.46 0-.831-.443-.831-.989v-.022c0-.546.372-.989.831-.989h3.327c.463 0 .842.45.842 1s-.379 1-.842 1M10 13a4 4 0 1 1 0-8a4 4 0 0 1 0 8m-6.03 8.073c-.583 0-1.048-.518-.96-1.093A7.07 7.07 0 0 1 10 14a7.07 7.07 0 0 1 6.989 5.98c.09.575-.376 1.093-.958 1.093z"/></svg>
@@ -124,35 +123,55 @@
           </div>
         </div>
 
-        <div class="bg-[#2e2c5c] rounded-[30px] p-2 flex justify-center flex-wrap">
+        <div class="bg-[#2e2c5c] rounded-[30px] p-2 flex justify-center flex-wrap ">
           <svg class=" text-[#797ed5] w-[140px] h-[120px] float-left " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5l5-5m-5-7v12"/></svg>
           <div class="flex flex-col justify-center">
             <span class="font-mono text-[#7c7f84] text-[25px]">Requests</span>
             <p class="font-mono font-semibold text-[#fff] text-[40px]">158</p>
           </div>
         </div>
-        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:col-span-1 sm:row-span-2 md:col-span-2 md:row-span-2">Item 4</div>
-        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:row-span-1 md:row-span-2">Item 5</div>
-        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:row-span-1 md:row-span-3 md:col-span-3">Item 6
+        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:col-span-1 sm:row-span-2 md:col-span-2 md:row-span-2 flex  justify-center ">
+       
+        </div>
+        <div class="bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] rounded-[35px] p-4 sm:row-span-2  md:row-span-2 flex justify-center flex-wrap ">
+            
+          <div class="flex p-[20px] flex-col mr-auto w-full items-start-start md-w[300px]">
+            <a class="font-mono  text-white text-[25px] mb-3">Unsold Items</a>
+ 
+            <span class="font-mono text-[#7c7f84] text-[25px]">Computers</span>
+            <a class="font-mono  text-white text-[25px] ">20</a>
+            <span class="font-mono text-[#7c7f84] text-[25px]">Tablets</span>
+            <a class="font-mono  text-white text-[25px] ">30</a>
+            <span class="font-mono text-[#7c7f84] text-[25px]">Gaming Chair</span>
+            <a class="font-mono  text-white text-[25px] ">16</a>
+          </div>
           
+
+        </div>
+        <div class="bg-[#2e2c5c] rounded-[35px] p-4 sm:row-span-2 md:row-span-3 md:col-span-3 flex justify-center flex-wrap content-center">
+          <div class="flex flex-col items-center justify-between w-full md:w-[500px] lg:w-[800px] 2xl:w-[900px] h-full">
+            <!-- Label at the Top -->
+            <a class="font-mono font-semibold text-white text-[25px] mb-4">Items Sold</a>
+        
+            <!-- Chart at the Bottom -->
+            <div class="flex-grow flex items-end w-full">
+              <canvas id="mychart"></canvas>
+            </div>
+          </div>
         </div>
       </div>
 
       </div>
 
-      <div>
+    
 
-      </div>
+      
 
      
   
     </div>
-
-   
-
-   
-  
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
